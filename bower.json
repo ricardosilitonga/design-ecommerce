@@ -1,0 +1,22 @@
+{
+  "name": "laravel-ecommerce",
+  "description": "Laravel Ecommerce",
+  "main": "index.js",
+  "authors": [
+    "Ricardo Silitonga"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^7.0.0",
+    "bourbon": "^4.3.4",
+    "fontawesome": "latest"
+  }
+}

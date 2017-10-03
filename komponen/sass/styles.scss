@@ -1,0 +1,33 @@
+@import 'bower_components/normalize-css/normalize';
+@import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
+/*  Susy 2 */
+@import 'komponen/sass/susy/sass/susy';
+
+
+// Susy Setup
+$susy: (
+	columns: 12,
+	gutters: 1/6,
+	global-box-sizing: border-box
+);
+
+.wrap {
+	@include container(70%);
+}
+
+.feature {
+	@include span(3);
+
+	&:last-child {
+		@include last;
+	}
+}
+
+.content {
+	@include span(8);
+}
+
+.sidebar {
+	@include span(4);
+	@include last;
+}
