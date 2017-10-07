@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Ecommerce</title>
+	<title>Ecommerce - Order Details</title>
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -42,11 +42,10 @@
         </div><!-- #search-form -->
 
         <div id="user-menu">
-          <!--
           <nav id="signin" class="dropdown">
             <ul>
               <li>
-                <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Sign In <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 
                 <ul>
                   <li><a href="#">Sign In</a></li>
@@ -54,7 +53,8 @@
                 </ul>
               </li>
             </ul>
-          </nav> -->
+          </nav>
+          <!--
           <nav class="dropdown">
             <ul>
               <li>
@@ -67,7 +67,7 @@
                 </ul>
               </li>
             </ul>
-          </nav><!-- .dropdown -->
+          </nav>-->
         </div><!-- #user-menu -->
 
         <div id="view-cart">
@@ -76,111 +76,65 @@
       </section><!-- .action-bar -->
     </header>
 
-    <section id="promo">
-      <div id="promo-details">
-        <h1>Today's Deals</h1>
-        <p>Checkout this section of <br>
-          products at a discounted price.</p>
-        <a href="#" class="default-btn">Shop Now</a>
-      </div><!-- #promo-details -->
-
-      <img src="http://via.placeholder.com/660x345" alt="Promotial Ad">
-    </section><!-- #promo -->
+    <hr>
 
     <section id="main-content">
-      <h2>Featured</h2>
-      <hr>
+      <aside id="my-account-menu">
+        <h3>MY ACCOUNT</h3>
+        <ul>
+          <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i> My Account</a></li>
+          <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i> Order History</a></li>
+          <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i> Whishlist</a></li>
+          <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i> Sign Out</a></li>
+        </ul>
+      </aside><!-- #categories-menu -->
 
-      <div id="products">
-        <div class="product">
-          <a href="#">
-            <img src="http://via.placeholder.com/200x220" alt="Product" class="feature">
-          </a>
+      <div id="order-details">
+        <h1>Order Details</h1>
+        <h2>Order #32332</h2>
+        <p>Date: 03/24/2013</p>
+        <h2>Buyer Information</h2>
+        <p>
+          Name: John Doe<br>
+          Phone: 555-555-555<br>
+          Email: john@doe.com
+        </p>
+        
+        <table border="1">
+          <tr>
+            <th>#</th>
+            <th>Product Name</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Product Name</td>
+            <td>$400</td>
+            <td>1</td>
+            <td>$400</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Product Name</td>
+            <td>$400</td>
+            <td>2</td>
+            <td>$800</td>
+          </tr>
+          <tr class="total">
+            <td colspan="5">
+              Subtotal: $1200<br>
+              <span>TOTAL: $1200</span>
+            </td>
+          </tr>
+        </table>
 
-          <h3><a href="#">This is Product Title</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, omnis expedita quos saepe labore unde quas a sunt eius nihil soluta nesciunt obcaecati et molestiae fuga incidunt veniam adipisci, reiciendis.</p>
-
-          <h5>Availability: <span class="instock">In Stock</span></h5>
-
-          <p>
-            <a href="#" class="cart-btn">
-              <span class="price">$499.08</span>
-              <i class="fa fa-shopping-basket" aria-hidden="true"></i> ADD TO CART
-            </a>
-          </p>
-
-          <p class="wish">
-            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</a>
-          </p>
-        </div><!-- .product -->
-
-        <div class="product">
-          <a href="#">
-            <img src="http://via.placeholder.com/200x220" alt="Product" class="feature">
-          </a>
-
-          <h3><a href="#">This is Product Title</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, omnis expedita quos saepe labore unde quas a sunt eius nihil soluta nesciunt obcaecati et molestiae fuga incidunt veniam adipisci, reiciendis.</p>
-
-          <h5>Availability: <span class="outofstock">Out of Stock</span></h5>
-
-          <p>
-            <a href="#" class="cart-btn">
-              <span class="price">$499.08</span>
-              <i class="fa fa-shopping-basket" aria-hidden="true"></i> ADD TO CART
-            </a>
-          </p>
-
-          <p class="wish">
-            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</a>
-          </p>
-        </div><!-- .product -->
-
-        <div class="product">
-          <a href="#">
-            <img src="http://via.placeholder.com/200x220" alt="Product" class="feature">
-          </a>
-
-          <h3><a href="#">This is Product Title</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, omnis expedita quos saepe labore unde quas a sunt eius nihil soluta nesciunt obcaecati et molestiae fuga incidunt veniam adipisci, reiciendis.</p>
-
-          <h5>Availability: <span class="instock">In Stock</span></h5>
-
-          <p>
-            <a href="#" class="cart-btn">
-              <span class="price">$499.08</span>
-              <i class="fa fa-shopping-basket" aria-hidden="true"></i> ADD TO CART
-            </a>
-          </p>
-
-          <p class="wish">
-            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</a>
-          </p>
-        </div><!-- .product -->
-
-        <div class="product">
-          <a href="#">
-            <img src="http://via.placeholder.com/200x220" alt="Product" class="feature">
-          </a>
-
-          <h3><a href="#">This is Product Title</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, omnis expedita quos saepe labore unde quas a sunt eius nihil soluta nesciunt obcaecati et molestiae fuga incidunt veniam adipisci, reiciendis.</p>
-
-          <h5>Availability: <span class="instock">In Stock</span></h5>
-
-          <p>
-            <a href="#" class="cart-btn">
-              <span class="price">$499.08</span>
-              <i class="fa fa-shopping-basket" aria-hidden="true"></i> ADD TO CART
-            </a>
-          </p>
-
-          <p class="wish">
-            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</a>
-          </p>
-        </div><!-- .product -->
-      </div><!-- #products -->
+        <a href="#" class="tertiary-btn">BACK TO ORDER HISTORY</a>
+      </div><!-- #order-details -->
     </section><!-- #main-content -->
+
+    <div class="uclearfix"></div>
 
     <hr>
 

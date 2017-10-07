@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Ecommerce</title>
-	<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <title>Ecommerce - Shopping Cart & Checkout</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div id="wrapper">
@@ -42,11 +42,10 @@
         </div><!-- #search-form -->
 
         <div id="user-menu">
-          <!--
           <nav id="signin" class="dropdown">
             <ul>
               <li>
-                <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Sign In <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 
                 <ul>
                   <li><a href="#">Sign In</a></li>
@@ -54,7 +53,8 @@
                 </ul>
               </li>
             </ul>
-          </nav> -->
+          </nav>
+          <!--
           <nav class="dropdown">
             <ul>
               <li>
@@ -67,7 +67,7 @@
                 </ul>
               </li>
             </ul>
-          </nav><!-- .dropdown -->
+          </nav>-->
         </div><!-- #user-menu -->
 
         <div id="view-cart">
@@ -76,111 +76,57 @@
       </section><!-- .action-bar -->
     </header>
 
-    <section id="promo">
-      <div id="promo-details">
-        <h1>Today's Deals</h1>
-        <p>Checkout this section of <br>
-          products at a discounted price.</p>
-        <a href="#" class="default-btn">Shop Now</a>
-      </div><!-- #promo-details -->
-
-      <img src="http://via.placeholder.com/660x345" alt="Promotial Ad">
-    </section><!-- #promo -->
+    <hr>
 
     <section id="main-content">
-      <h2>Featured</h2>
-      <hr>
+      <div id="shopping-cart">
+        <h1>Shopping Cart & Checkout</h1>
 
-      <div id="products">
-        <div class="product">
-          <a href="#">
-            <img src="http://via.placeholder.com/200x220" alt="Product" class="feature">
-          </a>
+        <form action="#" method="post">
+          <table border="1">
+            <tr>
+              <th>#</th>
+              <th>Product Name</th>
+              <th>Unit Price</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><img src="http://via.placeholder.com/65x37" alt="Supported payment method"> Product Name
+              </td>
+              <td>$400</td>
+              <td>
+                <input type="text" value="1" maxlength="2" class="qty">&nbsp;<i class="fa fa-refresh" aria-hidden="true"></i>
+              </td>
+              <td>$400&nbsp;<i class="fa fa-times"></i></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><img src="http://via.placeholder.com/65x37" alt="Supported payment method">&nbsp;Product Name
+              </td>
+              <td>$400</td>
+              <td>
+                <input type="text" value="2" maxlength="2" class="qty">&nbsp;<i class="fa fa-refresh" aria-hidden="true"></i>
+              </td>
+              <td>$800&nbsp;<i class="fa fa-times"></td>
+            </tr>
+            <tr class="total">
+              <td colspan="5">
+                Subtotal: $1200<br>
+                <span>TOTAL: $1200</span><br>
 
-          <h3><a href="#">This is Product Title</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, omnis expedita quos saepe labore unde quas a sunt eius nihil soluta nesciunt obcaecati et molestiae fuga incidunt veniam adipisci, reiciendis.</p>
+                <a href="#" class="tertiary-btn">CONTINUE SHOPPING</a>
+                <input type="submit" value="CHECKOUT WITH PAYPAL" class="secondary-cart-btn">
+              </td>
+            </tr>
+          </table>
 
-          <h5>Availability: <span class="instock">In Stock</span></h5>
-
-          <p>
-            <a href="#" class="cart-btn">
-              <span class="price">$499.08</span>
-              <i class="fa fa-shopping-basket" aria-hidden="true"></i> ADD TO CART
-            </a>
-          </p>
-
-          <p class="wish">
-            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</a>
-          </p>
-        </div><!-- .product -->
-
-        <div class="product">
-          <a href="#">
-            <img src="http://via.placeholder.com/200x220" alt="Product" class="feature">
-          </a>
-
-          <h3><a href="#">This is Product Title</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, omnis expedita quos saepe labore unde quas a sunt eius nihil soluta nesciunt obcaecati et molestiae fuga incidunt veniam adipisci, reiciendis.</p>
-
-          <h5>Availability: <span class="outofstock">Out of Stock</span></h5>
-
-          <p>
-            <a href="#" class="cart-btn">
-              <span class="price">$499.08</span>
-              <i class="fa fa-shopping-basket" aria-hidden="true"></i> ADD TO CART
-            </a>
-          </p>
-
-          <p class="wish">
-            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</a>
-          </p>
-        </div><!-- .product -->
-
-        <div class="product">
-          <a href="#">
-            <img src="http://via.placeholder.com/200x220" alt="Product" class="feature">
-          </a>
-
-          <h3><a href="#">This is Product Title</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, omnis expedita quos saepe labore unde quas a sunt eius nihil soluta nesciunt obcaecati et molestiae fuga incidunt veniam adipisci, reiciendis.</p>
-
-          <h5>Availability: <span class="instock">In Stock</span></h5>
-
-          <p>
-            <a href="#" class="cart-btn">
-              <span class="price">$499.08</span>
-              <i class="fa fa-shopping-basket" aria-hidden="true"></i> ADD TO CART
-            </a>
-          </p>
-
-          <p class="wish">
-            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</a>
-          </p>
-        </div><!-- .product -->
-
-        <div class="product">
-          <a href="#">
-            <img src="http://via.placeholder.com/200x220" alt="Product" class="feature">
-          </a>
-
-          <h3><a href="#">This is Product Title</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, omnis expedita quos saepe labore unde quas a sunt eius nihil soluta nesciunt obcaecati et molestiae fuga incidunt veniam adipisci, reiciendis.</p>
-
-          <h5>Availability: <span class="instock">In Stock</span></h5>
-
-          <p>
-            <a href="#" class="cart-btn">
-              <span class="price">$499.08</span>
-              <i class="fa fa-shopping-basket" aria-hidden="true"></i> ADD TO CART
-            </a>
-          </p>
-
-          <p class="wish">
-            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</a>
-          </p>
-        </div><!-- .product -->
-      </div><!-- #products -->
+        </form>
+      </div><!-- #new-account -->
     </section><!-- #main-content -->
+
+    <div class="uclearfix"></div>
 
     <hr>
 
@@ -250,7 +196,7 @@
   </div><!-- #wrapper -->
 
 
-	<script src="js/scripts.js"></script>
+  <script src="js/scripts.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>

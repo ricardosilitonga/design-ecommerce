@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Ecommerce</title>
+	<title>Ecommerce - Category</title>
 	<link rel="stylesheet" href="css/styles.css">
+  <!-- Bower Components -->
+  <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
 </head>
 <body>
   <div id="wrapper">
@@ -42,11 +44,10 @@
         </div><!-- #search-form -->
 
         <div id="user-menu">
-          <!--
           <nav id="signin" class="dropdown">
             <ul>
               <li>
-                <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Sign In <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 
                 <ul>
                   <li><a href="#">Sign In</a></li>
@@ -54,7 +55,8 @@
                 </ul>
               </li>
             </ul>
-          </nav> -->
+          </nav>
+          <!--
           <nav class="dropdown">
             <ul>
               <li>
@@ -67,7 +69,7 @@
                 </ul>
               </li>
             </ul>
-          </nav><!-- .dropdown -->
+          </nav>-->
         </div><!-- #user-menu -->
 
         <div id="view-cart">
@@ -76,22 +78,42 @@
       </section><!-- .action-bar -->
     </header>
 
-    <section id="promo">
-      <div id="promo-details">
-        <h1>Today's Deals</h1>
-        <p>Checkout this section of <br>
-          products at a discounted price.</p>
-        <a href="#" class="default-btn">Shop Now</a>
-      </div><!-- #promo-details -->
+    <section id="promo-alt">
+      <div id="promo1">
+        <h1>The brand new MacBook Pro</h1>
+        <p>With a special price, <span class="bold">today only</span></p>
+        <a href="#" class="secondary-btn">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        <img src="http://via.placeholder.com/680x400" alt="MacBook Pro">
+      </div><!-- #promo1 -->
 
-      <img src="http://via.placeholder.com/660x345" alt="Promotial Ad">
-    </section><!-- #promo -->
+      <div id="promo2">
+        <h2>The iPhone 5 is now<br>available in our store!</h2>
+        <a href="#">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        <img src="http://via.placeholder.com/66x130" alt="Iphone">
+      </div><!-- #promo2 -->
+
+      <div id="promo3">
+        <img src="http://via.placeholder.com/160x160" alt="Iphone">
+        <h2>The 27"<br>Thunderbolt Display<br>Simply Stunning</h2>
+        <a href="#">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+      </div><!-- #promo3 -->
+    </section><!-- #promo-alt -->
 
     <section id="main-content">
-      <h2>Featured</h2>
+      <h2>Category Name</h2>
       <hr>
 
-      <div id="products">
+      <aside id="categories-menu">
+        <h3>CATEGORIES</h3>
+        <ul>
+          <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i> Laptops</a></li>
+          <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i> Desktop PC</a></li>
+          <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i> Smartphones</a></li>
+          <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i> Tablets</a></li>
+        </ul>
+      </aside><!-- #categories-menu -->
+
+      <div id="listings">
         <div class="product">
           <a href="#">
             <img src="http://via.placeholder.com/200x220" alt="Product" class="feature">
@@ -179,8 +201,64 @@
             <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</a>
           </p>
         </div><!-- .product -->
-      </div><!-- #products -->
+
+        <div class="product">
+          <a href="#">
+            <img src="http://via.placeholder.com/200x220" alt="Product" class="feature">
+          </a>
+
+          <h3><a href="#">This is Product Title</a></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, omnis expedita quos saepe labore unde quas a sunt eius nihil soluta nesciunt obcaecati et molestiae fuga incidunt veniam adipisci, reiciendis.</p>
+
+          <h5>Availability: <span class="instock">In Stock</span></h5>
+
+          <p>
+            <a href="#" class="cart-btn">
+              <span class="price">$499.08</span>
+              <i class="fa fa-shopping-basket" aria-hidden="true"></i> ADD TO CART
+            </a>
+          </p>
+
+          <p class="wish">
+            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</a>
+          </p>
+        </div><!-- .product -->
+
+        <div class="product">
+          <a href="#">
+            <img src="http://via.placeholder.com/200x220" alt="Product" class="feature">
+          </a>
+
+          <h3><a href="#">This is Product Title</a></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, omnis expedita quos saepe labore unde quas a sunt eius nihil soluta nesciunt obcaecati et molestiae fuga incidunt veniam adipisci, reiciendis.</p>
+
+          <h5>Availability: <span class="instock">In Stock</span></h5>
+
+          <p>
+            <a href="#" class="cart-btn">
+              <span class="price">$499.08</span>
+              <i class="fa fa-shopping-basket" aria-hidden="true"></i> ADD TO CART
+            </a>
+          </p>
+
+          <p class="wish">
+            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Add to Wishlist</a>
+          </p>
+        </div><!-- .product -->
+      </div><!-- #listings -->
     </section><!-- #main-content -->
+
+    <div class="uclearfix"></div>
+
+    <hr>
+
+    <section id="pagination">
+      <p>Page
+        <span class="current">1</span> / 
+        <a href="#">2</a> / 
+        <a href="#">3</a>
+      </p>
+    </section>
 
     <hr>
 

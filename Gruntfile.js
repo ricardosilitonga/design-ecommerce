@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 		sass: {
 			options: {
 				sourceMap: true, // Values: true, false
-				outputStyle: 'nested' // Values: nested, expanded, compact, compressed
+				outputStyle: 'compressed' // Values: nested, expanded, compact, compressed
 			},
 			dist: {
 				files: {
